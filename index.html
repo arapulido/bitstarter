@@ -4,10 +4,13 @@
         <meta charset="utf-8">
         <title>My First Bitstarter</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet"
-            href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+        <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
         <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+        <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+        <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
         <style type="text/css">
 
             @media (min-width: 980px) {
@@ -69,6 +72,31 @@
             .video, .thermometer, .order, .social, .statistics {
                 text-align: center;
             }
+
+            .copy {
+                padding-top: 2.5%;
+                padding-bottom: 2.5%;
+                text-align: justify;
+            }
+
+            .asset {
+                padding: 2.5% 0%;
+            }
+
+            .footer {
+                color: #cccccc;
+                text-align: center;
+            }
+
+            .footer p {
+                font-size: 11px;
+            }
+
+            .footer a {
+                color: #ccccff;
+            }
+
+ 
        </style>
     </head>
     <body>
@@ -124,43 +152,83 @@
                                     <h3>10</h3> <p>days left</p>
                                 </div>
                             </div>
+                        </div> <!-- statistics -->
+                    </div> <!-- span8 -->
+
+                    <div class="span10 offset1">
+                        <div class="thermometer progress active">
+                            <div class="bar bar-success" style="width: 60%;"></div>
+                            <div class="bar bar-warning" style="width: 40%;"></div>
+                        </div> <!-- thermometer -->
+                    </div> <!-- span10 -->
+
+                    <div class="span6 offset3 order">
+                        <button class="btn btn-success btn-large">Preorder</button>
+                    </div>
+                    <div class="span8 offset2 social">
+                        <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+                        <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+                    </div>
+                </div> <!-- actions -->
+                
+            </div> <!-- rowfluid pitch -->
+
+                <div class="row-fluid section1">
+                    <div class="span5 offset1 asset">
+                        <img class="img-polaroid" src="http://placehold.it/480x300">
+                    </div>
+                    <div class="span5 copy">
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut magna lorem, ornare id ipsum ullamcorper, consequat luctus sem. Aenean eu dolor ut lorem luctus tempus luctus sed velit. Maecenas mollis at justo vitae tincidunt. Ut eu magna diam. Etiam aliquet arcu sit amet magna laoreet, vel elementum elit pulvinar. Pellentesque ac diam vel diam iaculis mollis. Duis malesuada neque et lectus sagittis convallis. Suspendisse potenti. Suspendisse aliquam eget nulla eget vehicula. Curabitur eget lorem eu purus imperdiet congue. Pellentesque sollicitudin ante sit amet ornare scelerisque. 
+                        </p>
+                    </div>
+                </div>
+                 <div class="row-fluid section2">
+                   <div class="span5 offset1 copy copy-right">
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut magna lorem, ornare id ipsum ullamcorper, consequat luctus sem. Aenean eu dolor ut lorem luctus tempus luctus sed velit. Maecenas mollis at justo vitae tincidunt. Ut eu magna diam. Etiam aliquet arcu sit amet magna laoreet, vel elementum elit pulvinar. Pellentesque ac diam vel diam iaculis mollis. Duis malesuada neque et lectus sagittis convallis. Suspendisse potenti. Suspendisse aliquam eget nulla eget vehicula. Curabitur eget lorem eu purus imperdiet congue. Pellentesque sollicitudin ante sit amet ornare scelerisque. 
+                        </p>
+                    </div>
+                     <div class="span5 asset">
+                        <img class="img-polaroid" src="http://placehold.it/480x300">
+                    </div>
+                </div>
+                <div class="fow-fluid faq">
+                    <div class="span10 offset1">
+                        <h3>FAQ</h3>
+                            <div class="accordion" id="accordion2">
+                                <div class="accordion-group">
+                                    <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">FAQ #1</a>
+                                    </div>
+                                    <div id="collapseOne" class="accordion-body collapse">
+                                        <div class="accordion-inner">
+                                            Anim pariatur cliche...
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="accordion-group">
+                                    <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">FAQ #2</a>
+                                    </div>
+                                    <div id="collapseTwo" class="accordion-body collapse">
+                                        <div class="accordion-inner">
+                                            Anim pariatur cliche...
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="row-fluid footer">
+                        <div class="span12">
+                            <p>This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a>
+                            </p>
+                        </div>
+                    </div>
 
-                <div class="span6">
-                    <div class="thermometer">
-                        Thermometer
-                    </div>
-                    <div class="order">
-                        Order
-                    </div>
-                    <div class="social">
-                        Social
-                    </div>
                 </div>
-            </div>
-            <div class="row section1">
-                <div class="span12">
-                   Marketing Section 1 
-                </div>
-            </div>
-            <div class="row section2">
-                <div class="span12">
-                   Marketing Section 2 
-                </div>
-            </div>
-            <div class="row faq">
-                <div class="span12">
-                    FAQ
-                </div>
-            </div>
-            <div class="row footer">
-                <div class="span12">
-                    Footer
-                </div>
-            </div>
-        </div>
+                
     </body>
 </html>
 
